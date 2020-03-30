@@ -1,0 +1,27 @@
+@media only screen and (max-width: 767px) {
+
+	/*------- Backface Visibility Section Starts -------*/
+
+.bg-backface-visibility { padding: 15px 15px 0; }
+.section-heading > h1 { font-size: 2.4rem; margin-bottom: 15px; }
+.box-panel,
+.box-panel-image { margin-bottom: 15px; }
+.box-front-face,
+.box-back-face { font-size: 1.8rem; }
+
+	/*------- Backface Visibility Section Ends -------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/*------- Backface Visibility Section Starts -------*/
+
+.bg-backface-visibility { padding: 30px 15px; }
+.section-heading > h1 { font-size: 3rem; margin-bottom: 30px; }
+.box-front-face,
+.box-back-face { font-size: 1.8rem; }
+
+	/*------- Backface Visibility Section Ends -------*/
+
+}

@@ -1,0 +1,145 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Barlow-Light"; src: url("../fonts/Barlow-Light.otf"); }
+@font-face { font-family: "Barlow-Regular"; src: url("../fonts/Barlow-Regular.otf"); }
+@font-face { font-family: "Barlow-Medium"; src: url("../fonts/Barlow-Medium.otf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
+h1,
+p { margin: 0; padding: 0; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Backface Visibility Section Starts -------*/
+
+.bg-backface-visibility { padding: 50px 15px; }
+.section-heading > h1 { color: #000; font: 3.6rem/1.42857143 "Barlow-Medium"; margin-bottom: 50px; }
+	
+	/*------- First Option Starts -------*/
+
+.box-panel {
+	height: 400px;
+	perspective: 700px;
+	position: relative;
+	width: 100%;
+}
+.box-front-back-panel {
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	width: 100%;
+}
+.box-panel:hover .box-front-back-panel {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+.box-front-face {
+	background-color: #0084fb;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	backface-visibility: hidden;
+	color: #000;
+	font: 2.4rem/1.42857143 "Barlow-Regular";
+	height: 100%;
+	line-height: 400px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.box-back-face {
+	background-color: #c3b700;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	backface-visibility: hidden;
+	color: #fff;
+	font: 2.4rem/1.42857143 "Barlow-Regular";
+	height: 100%;
+	line-height: 400px;
+	position: absolute;
+	text-align: center;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	width: 100%;
+}
+
+	/*------- First Option Ends -------*/
+
+	/*------- Second Option Starts -------*/
+
+.box-panel-image {
+	height: 400px;
+	perspective: 700px;
+	position: relative;
+	width: 100%;
+}
+.box-front-back-panel-image {
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	width: 100%;
+}
+.box-panel-image:hover .box-front-back-panel-image {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+.box-front-face-image {
+	backface-visibility: hidden;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.box-back-face-image {
+	backface-visibility: hidden;
+	height: 100%;
+	position: absolute;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	width: 100%;
+}
+.box-front-face-image > img,
+.box-back-face-image > img {
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	height: 400px;
+	object-fit: cover;
+	width: 100%;
+}
+
+	/*------- Second Option Ends -------*/
+
+/*------- Backface Visibility Section Ends -------*/
